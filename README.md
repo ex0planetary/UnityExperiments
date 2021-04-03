@@ -7,19 +7,24 @@ This repo contains several experiments in Unity that I've made over the past fou
 - Procedural biome generation that uses cellular automata to make each biome unique
 - World seed is a variable called "mseed" that can be changed in the GenerateBiomes() method in Scripts/TerrainGen.cs
 - Quite glitchy camera controls - use WASD to move around, and hold right-click to rotate the camera.
+
 Bear in mind that the skybox (or "starbox," I guess) is not mine. I think I searched up nebula skyboxes on Google Images or something as just a temporary thing.
+
 Additionally, there's an older version available with some differences:
+
 - No multithreading, so you've kinda got to wait for the full planet to load before you can do anything at a reasonable framerate. There's a percentage in the Unity console to keep track of how much of the planet has loaded.
 - A significantly buggier voxel-based LOD system (as compared to the mesh one in the final version).
 - Less finished terrain generation that had some strange artifacts.
 - A bit less buggy camera controls.
  
 **Space Game** (2019) has two scenes of interest.
+
 ProcSystem:
 - Has no camera control but you can see stuff being made in the Scene view.
 - Custom Star shader, unlike the texture workaround used in Cube Planet.
 - Procedural chunked planet mesh building using Marching Cubes. (Marching Cubes algorithm wasn't *entirely* written by me but I adapted it to Unity and modified it to work with multiple planet chunks.)
 - Skybox is static, but was made from an ingame screenshot of the ProcGalaxy scene.
+
 ProcGalaxy:
 - IMPORTANT: Make sure you run this on your first monitor if you have a multi-monitor setup! The camera control system is heavily unfinished and glitchy.
 - Camera can only be controlled on toggle - right click to toggle whether you can move it or not.
@@ -33,14 +38,17 @@ ProcGalaxy:
 
 
 **Exonaut** (2020) has a few different experiments.
+
 ShaderTest:
 - A small experiment with cel shading.
 - I was originally going to use this as the full game's art style but I never actually put all the different systems together.
+
 TerrainTest:
 - Another attempt at smooth planet generation, this time using the Surface Nets algorithm instead of Marching Cubes. All the code here was written entirely by me.
 - Has colored terrain!
 - Has some rudimentary cave generation.
 - At the time I stopped working on this I was trying to implement a smooth LOD system.
+
 ControlTest:
 - The last thing I really did with this project.
 - This was an attempt at making my own character controller. It didn't go super well since I never really finished it.
