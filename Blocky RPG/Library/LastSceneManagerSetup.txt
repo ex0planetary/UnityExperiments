@@ -1,0 +1,4 @@
+sceneSetups:
+- path: C:/Users/Kaden/Documents/KDesktopTransfer/Documents/Unity/Kenney Platformer/Assets/_Scenes/Lvl1.unity
+  isLoaded: 1
+  isActive: 1

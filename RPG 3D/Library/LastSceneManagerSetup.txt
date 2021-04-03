@@ -1,0 +1,4 @@
+sceneSetups:
+- path: C:/Users/Kaden/Documents/KDesktopTransfer/Documents/Unity/UnityCraft/Assets/Scenes/test.unity
+  isLoaded: 1
+  isActive: 1
